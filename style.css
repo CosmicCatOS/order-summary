@@ -65,6 +65,9 @@ body {
   justify-content: center;
   margin-top: 1.5rem;
   width: 19rem;
+  background-color: var(--pale-blue-2);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .info img {
