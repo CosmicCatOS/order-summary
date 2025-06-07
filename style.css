@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  font-family: "Red Hat Display";
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: var(--pale-blue);
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --pale-blue-2: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 1rem;
+}
+.container {
+  background: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 39rem;
+  max-height: 100%;
+}
+
+.order-message h1,
+.order-message p {
+  text-align: center;
+}
+
+.order-message h1 {
+  font-size: 1.75rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.order-message p {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.container-2 p {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  width: 19rem;
+}
+
+.info img {
+  margin-right: 1rem;
+}
+
+.info a {
+  margin-left: auto;
+  align-self: center;
+}
+
+.annual-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.annual {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.price {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+
+.change {
+  color: var(--bright-blue);
+  font-weight: 900;
+}
+
+.change:active {
+  color: hsl(245, 31%, 59%);
+  text-decoration: none;
+}
+
+.proceed:active {
+  background-color: #766cf1;
+  box-shadow: hsla(245, 83%, 68%, 0.25) 4px 16px 30px;
+}
+
+.cancel:active {
+    color: var(--dark-blue);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 1.75rem;
+  margin-top: 1rem;
+}
+
+.proceed {
+  background: var(--bright-blue);
+  color: var(--pale-blue);
+  height: 2.5rem;
+  border: none;
+  width: 20rem;
+  border-radius: 0.5rem;
+  font-weight: 900;
+  color: var(--pale-blue);
+  box-shadow: hsla(245, 75%, 52%, 0.25) 4px 16px 30px;
+}
+
+.cancel {
+  background-color: transparent;
+  border: none;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+}
